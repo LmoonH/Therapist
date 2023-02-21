@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Therapist</title>
+
+        <!--    Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!--Fontawesom-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!--Animated CSS-->
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--Bootstrap Carousel-->
+        <link type="text/css" rel="stylesheet" href="css/carousel.css" />
+
+        <link rel="stylesheet" href="css/isotope/style.css">
+
+        <!--Main Stylesheet-->
+        <link href="css/style.css" rel="stylesheet">
+        <!--Responsive Framework-->
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+            
+        .panel-login>.panel-heading {
+        color: #848c9d;
+        background-color: #e8e9ec;
+        border-color: #fff;
+        text-align:center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom: 0px;
+        padding: 0px 15px;
+        }
+        .panel-login .form-group {
+        padding: 0 30px;
+        
+        }
+        .panel-login>.panel-heading .login {
+        padding: 20px 30px;
+        border-bottom-leftt-radius: 5px;
+        
+        }
+        .panel-login>.panel-heading .register {
+        padding: 20px 30px;
+        background: #2d3b55;
+        border-bottom-right-radius: 5px;
+        text-align:center;
+        }
+        .panel-login>.panel-heading a{
+        text-decoration: none;
+        color: #666;
+        font-weight: 300;
+        font-size: 15px;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+        }
+        .panel-login>.panel-heading a#register-form-link {
+        color: #fff;
+        width: 100%;
+        text-align: right;
+        }
+        .panel-login>.panel-heading a#login-form-link {
+        width: 100%;
+        text-align: left;
+        }
+
+        .panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+        height: 45px;
+        border: 0;
+        font-size: 16px;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-bottom: 1px solid #e7e7e7;
+        border-radius: 0px;
+        padding: 6px 0px;
+        }
+        .panel-login input:hover,
+        .panel-login input:focus {
+        outline:none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-color: #ccc;
+        }
+        .btn-login {
+        background-color: #E8E9EC;
+        outline: none;
+        color: #2D3B55;
+        font-size: 14px;
+        height: auto;
+        font-weight: normal;
+        padding: 14px 0;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+        }
+        .btn-login:hover,
+        .btn-login:focus {
+        color: #fff;
+        background-color: #2D3B55;
+        }
+        .forgot-password {
+        text-decoration: underline;
+        color: #888;
+        }
+        .forgot-password:hover,
+        .forgot-password:focus {
+        text-decoration: underline;
+        color: #666;
+        }
+
+        .btn-register {
+        background-color: #E8E9EC;
+        outline: none;
+        color: #2D3B55;
+        font-size: 14px;
+        height: auto;
+        font-weight: normal;
+        padding: 14px 0;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+        }
+        .btn-register:hover,
+        .btn-register:focus {
+        color: #fff;
+        background-color: #2D3B55;
+        }
+
+    </style>
+    </head>
+
+    <body data-spy="scroll" data-target="#header">
+
+        <!--Start Hedaer Section-->
+        <section id="header">
+            <div class="header-area">
+                <div class="top_header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 zero_mp">
+                                <div class="address">
+                                    <i class="fa fa-home floatleft"></i>
+                                    <p>인천광역시 미추홀구 인하로 100</p>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 zero_mp">
+                                <div class="phone">
+                                    <i class="fa fa-phone floatleft"></i>
+                                    <p>+ 032-870-2114</p>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                            <div class="col-md-4">
+                                <div class="social_icon text-right">
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                        </div>
+                        <!--End of row-->
+                    </div>
+                    <!--End of container-->
+                </div>
+                <!--End of top header--> 
+                <div class="header_menu text-center" data-spy="affix" data-offset-top="50" id="nav">
+                    <div class="container">
+                        <nav class="navbar navbar-default zero_mp ">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand custom_navbar-brand" href="index.html"><img src="img/mainlogo.png" alt=""></a>
+                            </div>
+                            <!--End of navbar-header-->
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse zero_mp" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right main_menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="board.html">Board</a></li>
+                                    <li><a href="bookstore.html">Book Store</a></li>
+                                    <li><a href="goods.html">Goods Shop</a></li>
+                                    <li><a href="#counter">Chat-Talk</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="join.html">Join</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </nav>
+                        <!--End of nav-->
+                    </div>
+                    <!--End of container-->
+                </div>
+                <!--End of header menu-->
+            </div>
+            <!--end of header area-->
+        </section>
+        <!--End of Hedaer Section-->
+
+        <!-- 로그인 바디-->
+        <div class="container">
+           <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="panel panel-login">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <form id="login-form" action="index.html" method="post" role="form" style="display: block;">
+                        <h2 class="cen">로그인</h2>
+                          <div class="form-group">
+                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="아이디" value="">
+                          </div>
+                          <div class="form-group">
+                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="비밀번호">
+                          </div>
+                          <div class="col-xs-6 form-group pull-left checkbox">
+                            <input id="checkbox1" type="checkbox" name="remember">
+                            <label for="checkbox1">로그인 상태 유지</label>   
+                          </div>
+                          <div class="col-xs-6 form-group pull-right">     
+                                <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="로그인">
+                          </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-xs-6 tabs">
+                      <a href="index.html" class="active" id="login-form-link"><div class="login">이전으로</div></a>
+                    </div>
+                    <div class="col-xs-6 tabs">
+                      <a href="join.html" id="register-form-link"><div class="register">회원가입</div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--Start of footer-->
+        <section id="footer">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            <p>2022 - Design By <span><a href="">&#9798;</a></span>LMH</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="designer">
+                            <p>A Design By <a href="#">Lee Mun Haeng</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--End of row-->
+            </div>
+            <!--End of container-->
+        </section>
+        <!--End of footer-->
+
+
+
+        <!--Scroll to top-->
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+        <!--End of Scroll to top-->
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>-->
+        <script src="js/jquery-1.12.3.min.js"></script>
+
+        <!--Counter UP Waypoint-->
+        <script src="js/waypoints.min.js"></script>
+        <!--Counter UP-->
+        <script src="js/jquery.counterup.min.js"></script>
+
+        <script>
+            //for counter up
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        </script>
+
+        <!--Gmaps-->
+        <script src="js/gmaps.min.js"></script>
+        <script type="text/javascript">
+            var map;
+            $(document).ready(function () {
+                map = new GMaps({
+                    el: '#map',
+                    lat: 23.6911078,
+                    lng: 90.5112799,
+                    zoomControl: true,
+                    zoomControlOpt: {
+                        style: 'SMALL',
+                        position: 'LEFT_BOTTOM'
+                    },
+                    panControl: false,
+                    streetViewControl: false,
+                    mapTypeControl: false,
+                    overviewMapControl: false,
+                    scrollwheel: false,
+                });
+
+
+                map.addMarker({
+                    lat: 23.6911078,
+                    lng: 90.5112799,
+                    title: 'Office',
+                    details: {
+                        database_id: 42,
+                        author: 'Foysal'
+                    },
+                    click: function (e) {
+                        if (console.log)
+                            console.log(e);
+                        alert('You clicked in this marker');
+                    },
+                    mouseover: function (e) {
+                        if (console.log)
+                            console.log(e);
+                    }
+                });
+            });
+        </script>
+
+        <!--Google Maps API-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjxvF9oTfcziZWw--3phPVx1ztAsyhXL4"></script>
+
+
+        <!--Isotope-->
+        <script src="js/isotope/min/scripts-min.js"></script>
+        <script src="js/isotope/cells-by-row.js"></script>
+        <script src="js/isotope/isotope.pkgd.min.js"></script>
+        <script src="js/isotope/packery-mode.pkgd.min.js"></script>
+        <script src="js/isotope/scripts.js"></script>
+
+
+        <!--Back To Top-->
+        <script src="js/backtotop.js"></script>
+
+
+        <!--JQuery Click to Scroll down with Menu-->
+        <script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <!--WOW With Animation-->
+        <script src="js/wow.min.js"></script>
+        <!--WOW Activated-->
+        <script>
+            new WOW().init();
+        </script>
+
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Custom JavaScript-->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Therapist</title>
+
+        <!--    Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!--Fontawesom-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!--Animated CSS-->
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--Bootstrap Carousel-->
+        <link type="text/css" rel="stylesheet" href="css/carousel.css" />
+
+        <link rel="stylesheet" href="css/isotope/style.css">
+
+        <!--Main Stylesheet-->
+        <link href="css/style.css" rel="stylesheet">
+        <!--Responsive Framework-->
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+            
+    .divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+.container1{
+    position: absolute;
+    top: 18%;
+    left: 44%;
+}
+
+#footer {
+    min-height: 100px;
+    background: #222222;
+    color: #fff;
+
+    width: 100%;
+    position: relative;  
+    bottom: 0;
+    
+}
+#footer .copyright,
+#footer .designer {
+    padding-top: 45px;
+    font-size: 14px;
+}
+#footer .copyright p {
+    text-align: left;
+}
+#footer .designer p {
+    text-align: right;
+}
+#footer .copyright p,
+#footer .copyright p span a,
+#footer .designer p,
+#footer .designer a {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 3px;
+}
+
+h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:2.5em;}
+
+/********************* shopping Demo-1 **********************/
+.product-grid{font-family:Raleway,sans-serif;text-align:center;padding:0 0 72px;border:1px solid rgba(0,0,0,.1);overflow:hidden;position:relative;z-index:1}
+.product-grid .product-image{position:relative;transition:all .3s ease 0s}
+.product-grid .product-image a{display:block}
+.product-grid .product-image img{width:100%;height:auto}
+.product-grid .pic-1{opacity:1;transition:all .3s ease-out 0s}
+.product-grid:hover .pic-1{opacity:1}
+.product-grid .pic-2{opacity:0;position:absolute;top:0;left:0;transition:all .3s ease-out 0s}
+.product-grid:hover .pic-2{opacity:1}
+.product-grid .social{width:150px;padding:0;margin:0;list-style:none;opacity:0;transform:translateY(-50%) translateX(-50%);position:absolute;top:60%;left:50%;z-index:1;transition:all .3s ease 0s}
+.product-grid:hover .social{opacity:1;top:50%}
+.product-grid .social li{display:inline-block}
+.product-grid .social li a{color:#fff;background-color:#333;font-size:16px;line-height:40px;text-align:center;height:40px;width:40px;margin:0 2px;display:block;position:relative;transition:all .3s ease-in-out}
+.product-grid .social li a:hover{color:#fff;background-color:#ef5777}
+.product-grid .social li a:after,.product-grid .social li a:before{content:attr(data-tip);color:#fff;background-color:#000;font-size:12px;letter-spacing:1px;line-height:20px;padding:1px 5px;white-space:nowrap;opacity:0;transform:translateX(-50%);position:absolute;left:50%;top:-30px}
+.product-grid .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-20px;z-index:-1}
+.product-grid .social li a:hover:after,.product-grid .social li a:hover:before{opacity:1}
+.product-grid .product-discount-label,.product-grid .product-new-label{color:#fff;background-color:#ef5777;font-size:12px;text-transform:uppercase;padding:2px 7px;display:block;position:absolute;top:10px;left:0}
+.product-grid .product-discount-label{background-color:#333;left:auto;right:0}
+.product-grid .rating{color:#FFD200;font-size:12px;padding:12px 0 0;margin:0;list-style:none;position:relative;z-index:-1}
+.product-grid .rating li.disable{color:rgba(0,0,0,.2)}
+.product-grid .product-content{background-color:#fff;text-align:center;padding:12px 0;margin:0 auto;position:absolute;left:0;right:0;bottom:-27px;z-index:1;transition:all .3s}
+.product-grid:hover .product-content{bottom:0}
+.product-grid .title{font-size:13px;font-weight:400;letter-spacing:.5px;text-transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s}
+.product-grid .title a{color:#828282}
+.product-grid .title a:hover,.product-grid:hover .title a{color:#ef5777}
+.product-grid .price{color:#333;font-size:17px;font-family:Montserrat,sans-serif;font-weight:700;letter-spacing:.6px;margin-bottom:8px;text-align:center;transition:all .3s}
+.product-grid .price span{color:#999;font-size:13px;font-weight:400;text-decoration:line-through;margin-left:3px;display:inline-block}
+.product-grid .add-to-cart{color:#000;font-size:13px;font-weight:600}
+@media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
+}
+
+/********************* Shopping Demo-2 **********************/
+.demo{padding:45px 0}
+.product-grid2{font-family:'Open Sans',sans-serif;position:relative}
+.product-grid2 .product-image2{overflow:hidden;position:relative}
+.product-grid2 .product-image2 a{display:block}
+.product-grid2 .product-image2 img{width:100%;height:auto}
+.product-image2 .pic-1{opacity:1;transition:all .5s}
+.product-grid2:hover .product-image2 .pic-1{opacity:0}
+.product-image2 .pic-2{width:100%;height:100%;opacity:0;position:absolute;top:0;left:0;transition:all .5s}
+.product-grid2:hover .product-image2 .pic-2{opacity:1}
+.product-grid2 .social{padding:0;margin:0;position:absolute;bottom:50px;right:25px;z-index:1}
+.product-grid2 .social li{margin:0 0 10px;display:block;transform:translateX(100px);transition:all .5s}
+.product-grid2:hover .social li{transform:translateX(0)}
+.product-grid2:hover .social li:nth-child(2){transition-delay:.15s}
+.product-grid2:hover .social li:nth-child(3){transition-delay:.25s}
+.product-grid2 .social li a{color:#505050;background-color:#fff;font-size:17px;line-height:45px;text-align:center;height:45px;width:45px;border-radius:50%;display:block;transition:all .3s ease 0s}
+.product-grid2 .social li a:hover{color:#fff;background-color:#3498db;box-shadow:0 0 10px rgba(0,0,0,.5)}
+.product-grid2 .social li a:after,.product-grid2 .social li a:before{content:attr(data-tip);color:#fff;background-color:#000;font-size:12px;line-height:22px;border-radius:3px;padding:0 5px;white-space:nowrap;opacity:0;transform:translateX(-50%);position:absolute;left:50%;top:-30px}
+.product-grid2 .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-22px;z-index:-1}
+.product-grid2 .social li a:hover:after,.product-grid2 .social li a:hover:before{opacity:1}
+.product-grid2 .add-to-cart{color:#fff;background-color:#404040;font-size:15px;text-align:center;width:100%;padding:10px 0;display:block;position:absolute;left:0;bottom:-100%;transition:all .3s}
+.product-grid2 .add-to-cart:hover{background-color:#3498db;text-decoration:none}
+.product-grid2:hover .add-to-cart{bottom:0}
+.product-grid2 .product-new-label{background-color:#3498db;color:#fff;font-size:17px;padding:5px 10px;position:absolute;right:0;top:0;transition:all .3s}
+.product-grid2:hover .product-new-label{opacity:0}
+.product-grid2 .product-content{padding:20px 10px;text-align:center}
+.product-grid2 .title{font-size:17px;margin:0 0 7px}
+.product-grid2 .title a{color:#303030}
+.product-grid2 .title a:hover{color:#3498db}
+.product-grid2 .price{color:#303030;font-size:15px}
+@media screen and (max-width:990px){.product-grid2{margin-bottom:30px}
+}
+
+    </style>
+
+    </head>
+
+    <body data-spy="scroll" data-target="#header">
+
+        <!--Start Hedaer Section-->
+        <section id="header">
+            <div class="header-area">
+                <div class="top_header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 zero_mp">
+                                <div class="address">
+                                    <i class="fa fa-home floatleft"></i>
+                                    <p>인천광역시 미추홀구 인하로 100</p>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 zero_mp">
+                                <div class="phone">
+                                    <i class="fa fa-phone floatleft"></i>
+                                    <p>+ 032-870-2114</p>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                            <div class="col-md-4">
+                                <div class="social_icon text-right">
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                        </div>
+                        <!--End of row-->
+                    </div>
+                    <!--End of container-->
+                </div>
+
+                <!--End of top header--> 
+                <div class="header_menu text-center" data-spy="affix" data-offset-top="50" id="nav">
+                    <div class="container">
+                        <nav class="navbar navbar-default zero_mp ">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand custom_navbar-brand" href="index.html"><img src="img/mainlogo.png" alt=""></a>
+                            </div>
+                            <!--End of navbar-header-->
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse zero_mp" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right main_menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="board.html">Board</a></li>
+                                    <li><a href="bookstore.html">Book Store</a></li>
+                                    <li><a href="goods.html">Goods Shop</a></li>
+                                    <li><a href="#counter">Chat-Talk</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="join.html">Join</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </nav>
+                        <!--End of nav-->
+                    </div>
+                    <!--End of container-->
+                </div>
+                <!--End of header menu-->
+            </div>
+            <!--end of header area-->
+        </section>
+        <!--End of Hedaer Section-->
+
+        <!--여기에 새로운 내용 작성-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<div class="container">
+    <h3 class="h3">Book Store</h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="bookinfo1.html">
+                        <img class="pic-1" src="img/book1.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">20%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star disable"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">어쩌면 별들이<br>너의 슬플을<br>가져갈지도 몰라</a></h3>
+                    <h3 class="title"><a href="#">김용택</a></h3>
+                    <div class="price">16000원
+                        <span>20000원</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="bookinfo2.html">
+                        <img class="pic-1" src="img/book2.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">사랑의 물리학</a></h3>
+                    <h3 class="title"><a href="#">김인육</a></h3>
+                    <div class="price">10000원
+                        <span>20000원</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="bookinfo2.html">
+                        <img class="pic-1" src="img/book3.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">바람이 분다<br>당신이 좋다</a></h3>
+                    <h3 class="title"><a href="#">이병률</a></h3>
+                    <div class="price">10000원
+                        <span>20000원</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="bookinfo2.html">
+                        <img class="pic-1" src="img/book4.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">바다는 잘 있습니다</a></h3>
+                    <h3 class="title"><a href="#">이병률</a></h3>
+                    <div class="price">10000원
+                        <span>20000원</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<!--2단 -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="bookinfo2.html">
+                        <img class="pic-1" src="img/book5.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">꽃을 보듯 너를 본다</a></h3>
+                    <h3 class="title"><a href="#">이병률</a></h3>
+                    <div class="price">12000원
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="bookinfo2.html">
+                        <img class="pic-1" src="img/book6.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">너를 모르는 너에게</a></h3>
+                    <h3 class="title"><a href="#">나선미</a></h3>
+                    <div class="price">15000원
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="bookinfo2.html">
+                        <img class="pic-1" src="img/book7.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">한글자 사전</a></h3>
+                    <h3 class="title"><a href="#">김소연</a></h3>
+                    <div class="price">15000원
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="bookinfo2.html">
+                        <img class="pic-1" src="img/book8.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">우리에게 잠시 신이었던</a></h3>
+                    <h3 class="title"><a href="#">유희경</a></h3>
+                    <div class="price">17000원
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+        <!--Start of footer-->
+        <section id="footer">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            <p>2022 - Design By <span><a href="">&#9798;</a></span>LMH</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="designer">
+                            <p>A Design By <a href="#">Lee Mun Haeng</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--End of row-->
+            </div>
+            <!--End of container-->
+        </section>
+        <!--End of footer-->
+
+
+
+        <!--Scroll to top-->
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+        <!--End of Scroll to top-->
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>-->
+        <script src="js/jquery-1.12.3.min.js"></script>
+
+        <!--Counter UP Waypoint-->
+        <script src="js/waypoints.min.js"></script>
+        <!--Counter UP-->
+        <script src="js/jquery.counterup.min.js"></script>
+
+        <script>
+            //for counter up
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        </script>
+
+        <!--Gmaps-->
+        <script src="js/gmaps.min.js"></script>
+        <script type="text/javascript">
+            var map;
+            $(document).ready(function () {
+                map = new GMaps({
+                    el: '#map',
+                    lat: 23.6911078,
+                    lng: 90.5112799,
+                    zoomControl: true,
+                    zoomControlOpt: {
+                        style: 'SMALL',
+                        position: 'LEFT_BOTTOM'
+                    },
+                    panControl: false,
+                    streetViewControl: false,
+                    mapTypeControl: false,
+                    overviewMapControl: false,
+                    scrollwheel: false,
+                });
+
+
+                map.addMarker({
+                    lat: 23.6911078,
+                    lng: 90.5112799,
+                    title: 'Office',
+                    details: {
+                        database_id: 42,
+                        author: 'Foysal'
+                    },
+                    click: function (e) {
+                        if (console.log)
+                            console.log(e);
+                        alert('You clicked in this marker');
+                    },
+                    mouseover: function (e) {
+                        if (console.log)
+                            console.log(e);
+                    }
+                });
+            });
+        </script>
+
+        <!--Google Maps API-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjxvF9oTfcziZWw--3phPVx1ztAsyhXL4"></script>
+
+
+        <!--Isotope-->
+        <script src="js/isotope/min/scripts-min.js"></script>
+        <script src="js/isotope/cells-by-row.js"></script>
+        <script src="js/isotope/isotope.pkgd.min.js"></script>
+        <script src="js/isotope/packery-mode.pkgd.min.js"></script>
+        <script src="js/isotope/scripts.js"></script>
+
+
+        <!--Back To Top-->
+        <script src="js/backtotop.js"></script>
+
+
+        <!--JQuery Click to Scroll down with Menu-->
+        <script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <!--WOW With Animation-->
+        <script src="js/wow.min.js"></script>
+        <!--WOW Activated-->
+        <script>
+            new WOW().init();
+        </script>
+
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Custom JavaScript-->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
